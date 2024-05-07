@@ -20,3 +20,12 @@ Capture of third client:
 
 From the captures, we can observe how the app works. On the server side, we can see everytime a client sends a message, along with the adress and port where the message came from. It also shows everytime a new client connects to the server. Meanwhile on the client side, each client can send a message to the server and then the server broadcasts the message to every client thats connected.
 
+## 2.2. Modifying the websocket port
+When we try to run the client after the port for the client **only**, this happens:
+![image](https://github.com/ternaksapi/modul10_tutorial2_chat/assets/116947973/bd430744-b753-4663-b05e-800da6687e9d)
+
+To make sure it runs properly, we need to change the port for the server side as well. Here is the part that we need to modify:
+![image](https://github.com/ternaksapi/modul10_tutorial2_chat/assets/116947973/3248e3e5-0648-469b-ad1b-f7024f48cfb5)
+After changing the port from 2000 to  8080, we can then finally run the client successfully:
+![image](https://github.com/ternaksapi/modul10_tutorial2_chat/assets/116947973/e53675c6-368d-4cdc-a921-c3f6c67c6e86)
+
