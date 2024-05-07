@@ -29,3 +29,16 @@ To make sure it runs properly, we need to change the port for the server side as
 After changing the port from 2000 to  8080, we can then finally run the client successfully:
 ![image](https://github.com/ternaksapi/modul10_tutorial2_chat/assets/116947973/e53675c6-368d-4cdc-a921-c3f6c67c6e86)
 
+## 2.3 Small changes. Add some information to client
+![image](https://github.com/ternaksapi/modul10_tutorial2_chat/assets/116947973/2b47f93c-4e9a-4570-b7e3-f7962583744f)
+![image](https://github.com/ternaksapi/modul10_tutorial2_chat/assets/116947973/c5a1ba3e-c371-47be-a691-7bbf3f21a20b)
+![image](https://github.com/ternaksapi/modul10_tutorial2_chat/assets/116947973/8faf76d1-4e1b-41ae-b1d3-8cea630c2a71)
+
+Theres a small change we can do to show a bit more information about where each message comes from. First, we do a little modification on the client code to show more information about who the sender is:
+![image](https://github.com/ternaksapi/modul10_tutorial2_chat/assets/116947973/43078088-94d2-4d92-aee2-25d11630c4d8)
+
+And then, we change the server:
+![image](https://github.com/ternaksapi/modul10_tutorial2_chat/assets/116947973/63010f7a-c339-4464-a6a2-27a4bca40a56)
+![image](https://github.com/ternaksapi/modul10_tutorial2_chat/assets/116947973/dc0b4aeb-fc07-4f92-af9e-f89acdd9010f)
+
+The change is so that everytime the server is going to broadcast the message, it is also going to include where the sender is from through `addr`
